@@ -6,7 +6,7 @@
     <title>Italy Family Trip 2025</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Replace YOUR_API_KEY_HERE with your Google Maps API key -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTiqrQuhQzwf3yAVF9kgtDWLyJGupegTU"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE"></script>
     <script>
         function initMap() {
             const map = new google.maps.Map(document.getElementById('map'), {
@@ -40,7 +40,7 @@
         <!-- Itinerary -->
         <section id="itinerary">
             <h2>Detailed Itinerary</h2>
-            <!-- Day 1 -->
+            <!-- Day 1: April 27 - Arrival in Venice (Violet) -->
             <details class="day day-violet">
                 <summary>Day 1: April 27 - Arrival in Venice</summary>
                 <table>
@@ -54,7 +54,26 @@
                         <td>Arrive at Venice Marco Polo Airport</td>
                         <td>Check flight details, ensure kids have snacks.</td>
                     </tr>
-                    <!-- Add more rows as needed -->
+                    <tr>
+                        <td><strong>11:00 AM - 12:00 PM</strong></td>
+                        <td>Transfer to Venice (Alilaguna Water Bus to San Marco)</td>
+                        <td>Family Event, €15/adult, €7.50/kids under 12. Book at <a href="https://www.alilaguna.it/en">this website</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3:00 PM</strong></td>
+                        <td>Check-in at Hotel Aqua Palace</td>
+                        <td>Calle Pezzana, 380, Venice. Booking at <a href="https://www.hotelaquapalace.com">this website</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3:30 PM - 6:00 PM</strong></td>
+                        <td>Explore St. Mark’s Square & Gelato</td>
+                        <td>Piazza San Marco, Venice. Campanile Tickets: Book at <a href="https://www.basilicasanmarco.it">this website</a>. Gelato at Gelateria Suso (<em>Vegan Options</em>).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7:00 PM</strong></td>
+                        <td>Dinner at Rossopomodoro</td>
+                        <td>Vegetarian Pizzas. Reservations: Website. <em>Try Margherita</em>.</td>
+                    </tr>
                 </table>
                 <div class="comments">
                     <h3>Comments</h3>
@@ -62,7 +81,272 @@
                     <button onclick="saveComment('day1')">Save Comment</button>
                 </div>
             </details>
-            <!-- Add similar <details> blocks for Days 2-7 with appropriate colors -->
+            <!-- Day 2: April 28 - Venice Exploration (Indigo) -->
+            <details class="day day-indigo">
+                <summary>Day 2: April 28 - Venice Exploration</summary>
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td><strong>9:00 AM - 12:00 PM</strong></td>
+                        <td>Doge’s Palace Secret Itineraries Tour</td>
+                        <td>Doge’s Palace, Venice. Tickets: Book at <a href="https://palazzoducale.visitmuve.it">this website</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12:30 PM - 2:00 PM</strong></td>
+                        <td>Shared Gondola Ride</td>
+                        <td>Gondola Station near St. Mark’s Square, €80/30 mins, Split with Another Family.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2:30 PM - 5:00 PM</strong></td>
+                        <td>Murano Glassblowing</td>
+                        <td>Murano, Venice, Vaporetto Line 4.1, Free Demo.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7:00 PM</strong></td>
+                        <td>Dinner at Trattoria da Remigio</td>
+                        <td>Vegetarian Options, <em>Try Risotto</em>, Reservations: Website.</td>
+                    </tr>
+                </table>
+                <div class="comments">
+                    <h3>Comments</h3>
+                    <textarea id="comment-day2" rows="3" placeholder="Enter your comments here..."></textarea>
+                    <button onclick="saveComment('day2')">Save Comment</button>
+                </div>
+            </details>
+            <!-- Day 3: April 29 - Venice to Florence (Blue) -->
+            <details class="day day-blue">
+                <summary>Day 3: April 29 - Venice to Florence</summary>
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td><strong>8:00 AM - 10:00 AM</strong></td>
+                        <td>Train to Florence</td>
+                        <td>Venezia Santa Lucia → Firenze Santa Maria Novella, Trenitalia, Tickets Booked.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>10:30 AM</strong></td>
+                        <td>Check-in at Hotel Spadai</td>
+                        <td>Via de Martelli, Florence, Booking at <a href="https://www.hotelspadai.it">this website</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12:00 PM - 2:00 PM</strong></td>
+                        <td>Florence Duomo & Lunch</td>
+                        <td>Piazza del Duomo, Florence, Exterior Visit Only, Lunch at Mercato Centrale, <em>Vegetarian Panini</em>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3:00 PM - 6:00 PM</strong></td>
+                        <td>Uffizi Gallery</td>
+                        <td>Uffizi Family Tour, Florence, Tickets: Book at <a href="https://www.uffizi.it/en/tickets">this website</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7:00 PM</strong></td>
+                        <td>Dinner at Il Vegetariano</td>
+                        <td>Vegetarian/Vegan, Via delle Ruote, Florence, <em>Try Zucchini Lasagna</em>.</td>
+                    </tr>
+                </table>
+                <div class="comments">
+                    <h3>Comments</h3>
+                    <textarea id="comment-day3" rows="3" placeholder="Enter your comments here..."></textarea>
+                    <button onclick="saveComment('day3')">Save Comment</button>
+                </div>
+            </details>
+            <!-- Day 4: April 30 - Day Trip to Pisa (Green) -->
+            <details class="day day-green">
+                <summary>Day 4: April 30 - Day Trip to Pisa</summary>
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td><strong>7:30 AM - 8:30 AM</strong></td>
+                        <td>Train to Pisa</td>
+                        <td>Firenze Santa Maria Novella → Pisa Centrale, Trenitalia, €8/person.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>9:00 AM - 12:00 PM</strong></td>
+                        <td>Leaning Tower & Cathedral</td>
+                        <td>Piazza del Duomo, Pisa, Free Cathedral Entry, Tower Tickets: Book at <a href="https://www.opapisa.it/en/tickets">this website</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12:30 PM - 1:30 PM</strong></td>
+                        <td>Lunch at Il Crudo</td>
+                        <td>Vegetarian Panini, Via San Francesco, 108, Pisa, <em>Vegan Panini, Smoothies, Salads</em>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2:00 PM - 3:00 PM</strong></td>
+                        <td>Train Back to Florence</td>
+                        <td>Pisa Centrale → Firenze Santa Maria Novella.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3:30 PM - 4:30 PM</strong></td>
+                        <td>Ponte Vecchio Walk</td>
+                        <td>Family Event, Ponte Vecchio, Florence, Local Jewelry Shops, Street Performers.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5:00 PM - 7:00 PM</strong></td>
+                        <td>Piazzale Michelangelo Picnic</td>
+                        <td>Panoramic Views + Picnic, Florence, <em>Grab Vegetarian Sandwiches/Snacks from Mercato Centrale</em>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7:30 PM</strong></td>
+                        <td>Dinner at La Menagere</td>
+                        <td>Vegetarian Options like Truffle Risotto, Via de’ Ginori, 8, Florence, Reservations: Website.</td>
+                    </tr>
+                </table>
+                <div class="comments">
+                    <h3>Comments</h3>
+                    <textarea id="comment-day4" rows="3" placeholder="Enter your comments here..."></textarea>
+                    <button onclick="saveComment('day4')">Save Comment</button>
+                </div>
+            </details>
+            <!-- Day 5: May 1 - Florence to Rome (Yellow) -->
+            <details class="day day-yellow">
+                <summary>Day 5: May 1 - Florence to Rome</summary>
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td><strong>9:00 AM - 10:30 AM</strong></td>
+                        <td>Train to Rome</td>
+                        <td>Firenze Santa Maria Novella → Roma Termini, Trenitalia, Tickets Booked.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>11:00 AM - 12:00 PM</strong></td>
+                        <td>Check-in at Residenza Argentina</td>
+                        <td>Via di Torre Argentina, 47, 00186 Roma RM, Booking at <a href="https://www.residenzaargentina.it">this website</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12:30 PM - 2:00 PM</strong></td>
+                        <td>Pantheon & Lunch</td>
+                        <td>Pantheon Free Entry, Lunch at Ristorante Roscioli, <em>Vegetarian Pasta/Pizza, Try Cacio e Pepe</em>, Via dei Giubbonari, 21, Call +39 06 687 5287.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2:30 PM - 4:00 PM</strong></td>
+                        <td>Piazza Navona & Campo de’ Fiori</td>
+                        <td>Kid-Friendly Stroll, Street Artists at Navona, Market Snacks at Campo.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4:30 PM - 5:30 PM</strong></td>
+                        <td>Gelato at Giolitti</td>
+                        <td><em>Vegan Sorbets</em>, Via Uffici del Vicario, 40.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7:00 PM - 8:30 PM</strong></td>
+                        <td>Dinner at Il Margutta</td>
+                        <td><em>Gourmet Vegetarian, Try Artichoke Ravioli</em>, Via Margutta, 118, Call +39 06 3265 0577.</td>
+                    </tr>
+                </table>
+                <div class="comments">
+                    <h3>Comments</h3>
+                    <textarea id="comment-day5" rows="3" placeholder="Enter your comments here..."></textarea>
+                    <button onclick="saveComment('day5')">Save Comment</button>
+                </div>
+            </details>
+            <!-- Day 6: May 2 - Vatican City (Orange) -->
+            <details class="day day-orange">
+                <summary>Day 6: May 2 - Vatican City</summary>
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td><strong>8:00 AM - 10:30 AM</strong></td>
+                        <td>Vatican Museums & Sistine Chapel</td>
+                        <td><a href="https://drive.google.com/YOUR_VATICAN_TICKET_LINK" target="_blank">Ticket PDF</a>, GetYourGuide, Arrive 7:45 AM.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>10:45 AM - 11:45 AM</strong></td>
+                        <td>St. Peter’s Basilica</td>
+                        <td>Free Entry, Piazza San Pietro.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12:15 PM - 1:45 PM</strong></td>
+                        <td>Lunch at Pizzeria Amalfi</td>
+                        <td><em>Vegan Pizza, Try Margherita</em>, Via dei Gracchi, 12, Call +39 06 3973 3165.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2:15 PM - 3:45 PM</strong></td>
+                        <td>Castel Sant’Angelo</td>
+                        <td>Book at <a href="https://www.ticketone.it">this website</a>, €15/adult, Kids Free.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6:00 PM - 7:30 PM</strong></td>
+                        <td>Trevi Fountain & Gelato</td>
+                        <td>Piazza di Trevi, Toss Coins, Gelato at Giolitti (<em>Vegan Options</em>).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>8:00 PM - 9:30 PM</strong></td>
+                        <td>Dinner at Mater Terrae</td>
+                        <td><em>Vegetarian, Try Eggplant Parmigiana</em>, Via della Dataria, 3, Call +39 06 679 3818.</td>
+                    </tr>
+                </table>
+                <div class="comments">
+                    <h3>Comments</h3>
+                    <textarea id="comment-day6" rows="3" placeholder="Enter your comments here..."></textarea>
+                    <button onclick="saveComment('day6')">Save Comment</button>
+                </div>
+            </details>
+            <!-- Day 7: May 3 - Ancient Rome & Departure (Red) -->
+            <details class="day day-red">
+                <summary>Day 7: May 3 - Ancient Rome & Departure</summary>
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td><strong>8:30 AM - 10:30 AM</strong></td>
+                        <td>Colosseum</td>
+                        <td>Book at <a href="https://www.colosseo.it">this website</a>, €20/adult, Kids Free + €2 Fee, Arrive 8:15 AM.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>10:45 AM - 12:15 PM</strong></td>
+                        <td>Roman Forum & Palatine Hill</td>
+                        <td>Included in Colosseum Ticket.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12:45 PM - 2:15 PM</strong></td>
+                        <td>Lunch at Ristorante Roscioli</td>
+                        <td><em>Veggie Options, Try Gnocchi</em>, Via dei Giubbonari, 21.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2:45 PM - 5:00 PM</strong></td>
+                        <td>Villa Borghese Gardens</td>
+                        <td>Rowboats €4/person, 00197 Roma RM.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5:30 PM - 6:15 PM</strong></td>
+                        <td>Taxi to Hotel La Magnolia 140</td>
+                        <td>Fiumicino, €50-60.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6:30 PM - 8:00 PM</strong></td>
+                        <td>Dinner at Hotel or Ristorante Rustichella</td>
+                        <td><em>Veggie Pasta, Try Pesto</em>, Via Giuseppe Giulietti, 3, Call +39 06 650 7235.</td>
+                    </tr>
+                </table>
+                <div class="comments">
+                    <h3>Comments</h3>
+                    <textarea id="comment-day7" rows="3" placeholder="Enter your comments here..."></textarea>
+                    <button onclick="saveComment('day7')">Save Comment</button>
+                </div>
+            </details>
         </section>
 
         <!-- Important Phone Numbers & Links -->
@@ -78,14 +362,29 @@
                     <td>112 (Italy-wide)</td>
                 </tr>
                 <tr>
-                    <td>Hotel Aqua Palace</td>
+                    <td>Hotel Aqua Palace (Venice)</td>
                     <td>+39 041 296 0442</td>
+                </tr>
+                <tr>
+                    <td>Hotel Spadai (Florence)</td>
+                    <td>+39 055 627 0800</td>
+                </tr>
+                <tr>
+                    <td>Residenza Argentina (Rome)</td>
+                    <td>+39 06 6819 3267</td>
                 </tr>
                 <tr>
                     <td>Train Tickets</td>
                     <td><a href="https://www.trenitalia.com">Trenitalia</a></td>
                 </tr>
-                <!-- Add more rows as needed -->
+                <tr>
+                    <td>Vatican Museums</td>
+                    <td><a href="https://www.museivaticani.va">Musei Vaticani</a></td>
+                </tr>
+                <tr>
+                    <td>Colosseum Tickets</td>
+                    <td><a href="https://www.colosseo.it">Colosseo Official</a></td>
+                </tr>
             </table>
         </section>
     </main>
