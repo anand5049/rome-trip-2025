@@ -19,27 +19,13 @@ h2 {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.day-violet {
-    background-color: #EE82EE; /* Violet */
-}
-.day-indigo {
-    background-color: #4B0082; /* Indigo */
-}
-.day-blue {
-    background-color: #0000FF; /* Blue */
-}
-.day-green {
-    background-color: #008000; /* Green */
-}
-.day-yellow {
-    background-color: #FFFF00; /* Yellow */
-}
-.day-orange {
-    background-color: #FFA500; /* Orange */
-}
-.day-red {
-    background-color: #FF0000; /* Red */
-}
+.day-violet { background-color: #EE82EE; }
+.day-indigo { background-color: #4B0082; }
+.day-blue { background-color: #0000FF; }
+.day-green { background-color: #008000; }
+.day-yellow { background-color: #FFFF00; }
+.day-orange { background-color: #FFA500; }
+.day-red { background-color: #FF0000; }
 summary {
     cursor: pointer;
     font-weight: bold;
@@ -50,10 +36,11 @@ summary {
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: white; /* Ensure table background is white for readability */
+    background-color: white;
+    margin-bottom: 10px;
 }
 th, td {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
     text-align: left;
 }
@@ -63,25 +50,33 @@ th {
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
-strong {
-    color: #d32f2f; /* Red for times */
+.comments {
+    margin-top: 10px;
 }
-em {
-    color: #388e3c; /* Green for vegetarian options or emphasis */
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
-a {
-    color: #1976d2;
-    text-decoration: none;
+button {
+    margin-top: 5px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-a:hover {
-    text-decoration: underline;
-}
-#budget {
-    margin-top: 40px;
-}
-#budget table {
+#important-info table {
     background-color: #fff;
 }
-#budget th {
+#important-info th {
     background-color: #e0e0e0;
+}
+@media (max-width: 600px) {
+    table, th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
