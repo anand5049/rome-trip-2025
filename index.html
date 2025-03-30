@@ -1,31 +1,108 @@
-<script>
-  window.itineraryData = {};
-  fetch('data/itinerary.json')
-    .then(response => response.json())
-    .then(data => window.itineraryData = data);
-
-  window.ticketsData = {};
-  fetch('data/tickets.json')
-    .then(response => response.json())
-    .then(data => window.ticketsData = data);
-</script>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italy Family Trip 2025</title>
-    <link rel="stylesheet" href="/assets/style.css">
-    <!-- Add these CDNs -->
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app">
-        <!-- Interactive timeline will be auto-generated here -->
-    </div>
-    
-    <script src="assets/script.js"></script>
-    <script src="data/itinerary.json"></script>
-    <script src="data/tickets.json"></script>
+    <header>
+        <h1>Italy Family Trip: April 27 - May 3, 2025</h1>
+    </header>
+    <main>
+        <section id="itinerary">
+            <h2>Itinerary</h2>
+            <details class="day">
+                <summary>Day 1: April 27 - Arrival in Venice</summary>
+                <ul>
+                    <li><strong>10:00 AM</strong>: Arrive at Venice Marco Polo Airport</li>
+                    <li><strong>11:00 AM - 12:00 PM</strong>: Transfer to Venice (Alilaguna Water Bus to San Marco, Family Event, €15/adult, €7.50/kids under 12, <a href="https://www.alilaguna.it/en" target="_blank">Book Here</a>)</li>
+                    <li><strong>3:00 PM</strong>: Check-in at Hotel Aqua Palace (Calle Pezzana, 380, Venice, <a href="https://www.hotelaquapalace.com" target="_blank">Booking</a>)</li>
+                    <li><strong>3:30 PM - 6:00 PM</strong>: Explore St. Mark’s Square & Gelato (Piazza San Marco, Venice, Campanile Tickets: <a href="https://www.basilicasanmarco.it" target="_blank">Book Here</a>, Gelato at Gelateria Suso, <em>Vegan Options</em>)</li>
+                    <li><strong>7:00 PM</strong>: Dinner at Rossopomodoro (Vegetarian Pizzas, Reservations: Website, <em>Try Margherita</em>)</li>
+                    <li><strong>Travel Tip</strong>: Arrive early for Alilaguna to avoid crowds. Bring water for kids during St. Mark’s visit.</li>
+                    <li><strong>Kid-Friendly</strong>: St. Mark’s pigeons are fun for kids to chase (supervised).</li>
+                </ul>
+            </details>
+            <details class="day">
+                <summary>Day 2: April 28 - Venice Exploration</summary>
+                <ul>
+                    <li><strong>9:00 AM - 12:00 PM</strong>: Doge’s Palace Secret Itineraries Tour (Doge’s Palace, Venice, Tickets: <a href="https://palazzoducale.visitmuve.it" target="_blank">Book Here</a>)</li>
+                    <li><strong>12:30 PM - 2:00 PM</strong>: Shared Gondola Ride (Gondola Station near St. Mark’s Square, €80/30 mins, Split with Another Family)</li>
+                    <li><strong>2:30 PM - 5:00 PM</strong>: Murano Glassblowing (Murano, Venice, Vaporetto Line 4.1, Free Demo of Venetian Glass Art)</li>
+                    <li><strong>7:00 PM</strong>: Dinner at Trattoria da Remigio (Vegetarian Options, <em>Try Risotto</em>, Reservations: Website)</li>
+                    <li><strong>Travel Tip</strong>: Book Doge’s tour early—sells out fast. Vaporetto can be crowded; hold kids’ hands.</li>
+                    <li><strong>Kid-Friendly</strong>: Gondola ride is a hit—let kids spot bridges. Glassblowing demo fascinates with colors.</li>
+                </ul>
+            </details>
+            <details class="day">
+                <summary>Day 3: April 29 - Venice to Florence</summary>
+                <ul>
+                    <li><strong>8:00 AM - 10:00 AM</strong>: Train to Florence (Venezia Santa Lucia → Firenze Santa Maria Novella, Trenitalia, Tickets Booked)</li>
+                    <li><strong>10:30 AM</strong>: Check-in at Hotel Spadai (Via de Martelli, Florence, <a href="https://www.hotelspadai.it" target="_blank">Booking</a>)</li>
+                    <li><strong>12:00 PM - 2:00 PM</strong>: Florence Duomo & Lunch (Piazza del Duomo, Florence, Exterior Visit Only, Lunch at Mercato Centrale, <em>Vegetarian Panini</em>)</li>
+                    <li><strong>3:00 PM - 6:00 PM</strong>: Uffizi Gallery (Uffizi Family Tour, Florence, Tickets: <a href="https://www.uffizi.it/en/tickets" target="_blank">Book Here</a>)</li>
+                    <li><strong>7:00 PM</strong>: Dinner at Il Vegetariano (Vegetarian/Vegan, Via delle Ruote, Florence, <em>Try Zucchini Lasagna</em>)</li>
+                    <li><strong>Travel Tip</strong>: Train seats—book family section. Uffizi: Arrive 15 mins early for security.</li>
+                    <li><strong>Kid-Friendly</strong>: Duomo’s dome is a fun “giant hat” story for kids. Uffizi tour includes kid-friendly art explanations.</li>
+                </ul>
+            </details>
+            <details class="day">
+                <summary>Day 4: April 30 - Day Trip to Pisa</summary>
+                <ul>
+                    <li><strong>7:30 AM - 8:30 AM</strong>: Train to Pisa (Firenze Santa Maria Novella → Pisa Centrale, Trenitalia, €8/person)</li>
+                    <li><strong>9:00 AM - 12:00 PM</strong>: Leaning Tower & Cathedral (Piazza del Duomo, Pisa, Free Cathedral Entry, Tower Tickets: <a href="https://www.opapisa.it/en/tickets" target="_blank">Book Here</a>)</li>
+                    <li><strong>12:30 PM - 1:30 PM</strong>: Lunch at Il Crudo (Vegetarian Panini, Via San Francesco, 108, Pisa, <em>Vegan Panini, Smoothies, Salads</em>)</li>
+                    <li><strong>2:00 PM - 3:00 PM</strong>: Train Back to Florence (Pisa Centrale → Firenze Santa Maria Novella)</li>
+                    <li><strong>3:30 PM - 4:30 PM</strong>: Ponte Vecchio Walk (Family Event, Ponte Vecchio, Florence, Local Jewelry Shops, Street Performers)</li>
+                    <li><strong>5:00 PM - 7:00 PM</strong>: Piazzale Michelangelo Picnic (Panoramic Views + Picnic, Florence, <em>Grab Vegetarian Sandwiches/Snacks from Mercato Centrale</em>)</li>
+                    <li><strong>7:30 PM</strong>: Dinner at La Menagere (Vegetarian Options like Truffle Risotto, Via de’ Ginori, 8, Florence, Reservations: Website)</li>
+                    <li><strong>Travel Tip</strong>: Pisa Tower tickets—book timed entry. Bring sunscreen for Piazzale Michelangelo.</li>
+                    <li><strong>Kid-Friendly</strong>: Leaning Tower photo ops (pretend to “push” it). Ponte Vecchio performers entertain kids.</li>
+                </ul>
+            </details>
+            <details class="day">
+                <summary>Day 5: May 1 - Florence to Rome</summary>
+                <ul>
+                    <li><strong>9:00 AM - 10:30 AM</strong>: Train to Rome (Firenze Santa Maria Novella → Roma Termini, Trenitalia, Tickets Booked)</li>
+                    <li><strong>11:00 AM - 12:00 PM</strong>: Check-in at Residenza Argentina (Via di Torre Argentina, 47, 00186 Roma RM, <a href="https://www.residenzaargentina.it" target="_blank">Booking</a>)</li>
+                    <li><strong>12:30 PM - 2:00 PM</strong>: Pantheon (Free Entry) & Lunch at Ristorante Roscioli (<em>Vegetarian Pasta/Pizza, Try Cacio e Pepe</em>, Via dei Giubbonari, 21, Call +39 06 687 5287)</li>
+                    <li><strong>2:30 PM - 4:00 PM</strong>: Piazza Navona & Campo de’ Fiori (Kid-Friendly Stroll, Street Artists at Navona, Market Snacks at Campo)</li>
+                    <li><strong>4:30 PM - 5:30 PM</strong>: Gelato at Giolitti (<em>Vegan Sorbets</em>, Via Uffici del Vicario, 40)</li>
+                    <li><strong>7:00 PM - 8:30 PM</strong>: Dinner at Il Margutta (<em>Gourmet Vegetarian, Try Artichoke Ravioli</em>, Via Margutta, 118, Call +39 06 3265 0577)</li>
+                    <li><strong>Travel Tip</strong>: Train—arrive 15 mins early. Pantheon: Short visit, kids may tire quickly.</li>
+                    <li><strong>Kid-Friendly</strong>: Navona’s artists let kids watch; Campo’s fruit stalls are a fun snack stop.</li>
+                </ul>
+            </details>
+            <details class="day">
+                <summary>Day 6: May 2 - Vatican City</summary>
+                <ul>
+                    <li><strong>8:00 AM - 10:30 AM</strong>: Vatican Museums & Sistine Chapel (<a href="https://drive.google.com/YOUR_VATICAN_TICKET_LINK" target="_blank">Ticket PDF</a>, GetYourGuide, Arrive 7:45 AM)</li>
+                    <li><strong>10:45 AM - 11:45 AM</strong>: St. Peter’s Basilica (Free Entry, Piazza San Pietro)</li>
+                    <li><strong>12:15 PM - 1:45 PM</strong>: Lunch at Pizzeria Amalfi (<em>Vegan Pizza, Try Margherita</em>, Via dei Gracchi, 12, Call +39 06 3973 3165)</li>
+                    <li><strong>2:15 PM - 3:45 PM</strong>: Castel Sant’Angelo (<a href="https://www.ticketone.it" target="_blank">Book Here</a>, €15/adult, Kids Free)</li>
+                    <li><strong>6:00 PM - 7:30 PM</strong>: Trevi Fountain (Piazza di Trevi, Toss Coins) & Gelato at Giolitti (<em>Vegan Options</em>)</li>
+                    <li><strong>8:00 PM - 9:30 PM</strong>: Dinner at Mater Terrae (<em>Vegetarian, Try Eggplant Parmigiana</em>, Via della Dataria, 3, Call +39 06 679 3818)</li>
+                    <li><strong>Travel Tip</strong>: Vatican: Wear comfy shoes, long lines. Trevi: Evening is less crowded.</li>
+                    <li><strong>Kid-Friendly</strong>: Castel’s secret passage story excites kids. Trevi coin toss is a fun ritual.</li>
+                </ul>
+            </details>
+            <details class="day">
+                <summary>Day 7: May 3 - Ancient Rome & Departure</summary>
+                <ul>
+                    <li><strong>8:30 AM - 10:30 AM</strong>: Colosseum (<a href="https://www.colosseo.it" target="_blank">Book Here</a>, €20/adult, Kids Free + €2 Fee, Arrive 8:15 AM)</li>
+                    <li><strong>10:45 AM - 12:15 PM</strong>: Roman Forum & Palatine Hill (Included in Colosseum Ticket)</li>
+                    <li><strong>12:45 PM - 2:15 PM</strong>: Lunch at Ristorante Roscioli (<em>Veggie Options, Try Gnocchi</em>, Via dei Giubbonari, 21)</li>
+                    <li><strong>2:45 PM - 5:00 PM</strong>: Villa Borghese Gardens (Rowboats €4/person, 00197 Roma RM)</li>
+                    <li><strong>5:30 PM - 6:15 PM</strong>: Taxi to Hotel La Magnolia 140 (Fiumicino, €50-60)</li>
+                    <li><strong>6:30 PM - 8:00 PM</strong>: Dinner at Hotel or Ristorante Rustichella (<em>Veggie Pasta, Try Pesto</em>, Via Giuseppe Giulietti, 3, Call +39 06 650 7235)</li>
+                    <li><strong>Travel Tip</strong>: Colosseum: Bring water, sunny. Villa Borghese: Relaxed end—kids can run.</li>
+                    <li><strong>Kid-Friendly</strong>: Colosseum gladiator stories engage kids. Villa Borghese rowboats are a fun family activity.</li>
+                </ul>
+            </details>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
