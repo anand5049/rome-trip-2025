@@ -1,3 +1,15 @@
+<script>
+  window.itineraryData = {};
+  fetch('data/itinerary.json')
+    .then(response => response.json())
+    .then(data => window.itineraryData = data);
+
+  window.ticketsData = {};
+  fetch('data/tickets.json')
+    .then(response => response.json())
+    .then(data => window.ticketsData = data);
+</script>
+
 <!DOCTYPE html>
 <html>
 <head>
