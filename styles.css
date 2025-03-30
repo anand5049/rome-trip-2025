@@ -1,22 +1,49 @@
-:root {
-  --venice-blue: #2D5D7C;
-  --florence-orange: #E57A44;
-  --rome-gold: #C4A35A;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
-
-.day-card {
-  background: linear-gradient(145deg, #ffffff, #f8f9fa);
-  border-left: 5px solid var(--venice-blue);
-  margin: 2rem 0;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
-
-.ticket-badge {
-  background: var(--rome-gold);
-  color: white;
-  padding: 4px 8px;
-  border-radius: 20px;
-  cursor: pointer;
+h2, h3 {
+    color: #333;
+}
+.day {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+ul {
+    list-style: none;
+    padding: 10px;
+}
+li {
+    margin: 10px 0;
+}
+strong {
+    color: #d32f2f; /* Red for times */
+}
+em {
+    color: #388e3c; /* Green for vegetarian */
+}
+a {
+    color: #1976d2;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
