@@ -16,9 +16,29 @@ h2 {
 .day {
     margin: 20px 0;
     padding: 15px;
-    background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.day-violet {
+    background-color: #EE82EE; /* Violet */
+}
+.day-indigo {
+    background-color: #4B0082; /* Indigo */
+}
+.day-blue {
+    background-color: #0000FF; /* Blue */
+}
+.day-green {
+    background-color: #008000; /* Green */
+}
+.day-yellow {
+    background-color: #FFFF00; /* Yellow */
+}
+.day-orange {
+    background-color: #FFA500; /* Orange */
+}
+.day-red {
+    background-color: #FF0000; /* Red */
 }
 summary {
     cursor: pointer;
@@ -30,6 +50,7 @@ summary {
 table {
     width: 100%;
     border-collapse: collapse;
+    background-color: white; /* Ensure table background is white for readability */
 }
 th, td {
     padding: 10px;
@@ -54,4 +75,13 @@ a {
 }
 a:hover {
     text-decoration: underline;
+}
+#budget {
+    margin-top: 40px;
+}
+#budget table {
+    background-color: #fff;
+}
+#budget th {
+    background-color: #e0e0e0;
 }
