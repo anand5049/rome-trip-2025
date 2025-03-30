@@ -1,0 +1,20 @@
+{
+  "days": [
+    {
+      "dayNumber": 1,
+      "date": "April 27, 2025",
+      "location": "Venice",
+      "activities": [
+        {
+          "time": "11:30 AM",
+          "title": "Arrival at Venice Marco Polo Airport",
+          "details": "Transfer via Alilaguna Blue Line",
+          "tickets": {
+            "link": "#",
+            "price": "€15/adult"
+          }
+        }
+      ]
+    }
+  ]
+}
