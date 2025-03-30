@@ -1,0 +1,10 @@
+{
+  "bookings": [
+    {
+      "day": 1,
+      "title": "Alilaguna Water Bus",
+      "confirmation": "ABC123",
+      "pdf": "/assets/tickets/venice-bus.pdf"
+    }
+  ]
+}
