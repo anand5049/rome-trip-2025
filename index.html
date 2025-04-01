@@ -5,38 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italy Family Trip 2025</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Replace YOUR_API_KEY_HERE with your Google Maps API key -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTiqrQuhQzwf3yAVF9kgtDWLyJGupegTU"></script>
-    <script>
-        function initMap() {
-            const map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 41.9028, lng: 12.4964 }, // Centered on Rome
-                zoom: 6
-            });
-            const cities = [
-                { name: 'Venice', position: { lat: 45.4408, lng: 12.3155 }, days: 'Days 1-2' },
-                { name: 'Florence', position: { lat: 43.7696, lng: 11.2558 }, days: 'Days 3-4' },
-                { name: 'Pisa', position: { lat: 43.7228, lng: 10.4017 }, days: 'Day 4' },
-                { name: 'Rome', position: { lat: 41.9028, lng: 12.4964 }, days: 'Days 5-7' }
-            ];
-            cities.forEach(city => {
-                new google.maps.Marker({
-                    position: city.position,
-                    map: map,
-                    title: `${city.name} - ${city.days}`
-                });
-            });
-        }
-    </script>
 </head>
 <body>
     <header>
         <h1>Italy Family Trip: April 27 - May 3, 2025</h1>
     </header>
     <main>
-        <!-- Google Map -->
-        <section id="map" style="height: 400px; margin-bottom: 20px;"></section>
-
         <!-- Itinerary -->
         <section id="itinerary">
             <h2>Detailed Itinerary</h2>
@@ -389,7 +363,7 @@
         </section>
     </main>
 
-    <!-- JavaScript for Comments and Map -->
+    <!-- JavaScript for Comments -->
     <script>
         function saveComment(day) {
             const comment = document.getElementById(`comment-${day}`).value;
@@ -404,7 +378,6 @@
             });
         }
         window.onload = () => {
-            initMap();
             loadComments();
         };
     </script>
